@@ -23,8 +23,6 @@
         android:focusable="true"
         android:clickable="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:visibility="gone"
-        android:padding="15dp"
         android:id="@+id/containerPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,8 +37,9 @@
             >
 
             <ImageView
+                android:scaleType="centerCrop"
                 android:id="@+id/imgCurrentSong"
-                android:layout_width="120dp"
+                android:layout_width="100dp"
                 android:layout_height="80dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +59,7 @@
                 tools:text="Nombre de una canción myu larga" />
 
             <androidx.cardview.widget.CardView
+                android:layout_marginEnd="20dp"
                 android:id="@+id/containerButton"
                 android:layout_width="54dp"
                 android:layout_height="54dp"
