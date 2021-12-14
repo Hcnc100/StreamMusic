@@ -20,6 +20,7 @@
         tools:listitem="@layout/item_song" />
 
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:focusable="true"
         android:clickable="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"

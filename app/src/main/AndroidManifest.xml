@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StreamMusic">
         <activity
+            android:theme="@style/SplashTheme"
             android:name=".ui.activitys.MainActivity"
             android:exported="true">
             <intent-filter>

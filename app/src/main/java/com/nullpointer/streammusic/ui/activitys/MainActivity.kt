@@ -9,6 +9,7 @@ import dagger.hilt.android.HiltAndroidApp
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_StreamMusic)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }

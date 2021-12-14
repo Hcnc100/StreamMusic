@@ -263,7 +263,7 @@ class MusicServices : MediaBrowserServiceCompat() {
                 val notificationChannel = NotificationChannel(
                     Constants.NOTIFICATION_CHANNEL_ID,
                     "Player",
-                    NotificationManager.IMPORTANCE_HIGH
+                    NotificationManager.IMPORTANCE_LOW
                 )
                 notificationManager.createNotificationChannel(notificationChannel)
             }
