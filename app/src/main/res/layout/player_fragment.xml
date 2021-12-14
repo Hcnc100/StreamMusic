@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6" />
+
+    <ImageView
+        android:id="@+id/imageSong"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNameSong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        tools:text="Este es un nombre muy largo de un canción" />
+
+    <TextView
+        android:id="@+id/textNameArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameSong"
+        tools:text="Este es un artista" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textCurrentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameArtist"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/textTimeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCurrentTime"
+        tools:text="00:00" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/textTimeSong"
+        app:layout_constraintStart_toEndOf="@+id/textCurrentTime"
+        app:layout_constraintTop_toTopOf="@+id/textCurrentTime" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerButtonplay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/purple_500"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/buttonPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            app:lottie_rawRes="@raw/play"
+            app:lottie_speed="2" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginEnd="30dp"
+        android:id="@+id/containerButtonPrev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/purple_500"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerButtonplay"
+        app:layout_constraintEnd_toStartOf="@+id/containerButtonplay"
+        app:layout_constraintTop_toTopOf="@+id/containerButtonplay">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/buttonPrev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            app:lottie_rawRes="@raw/prev"
+            app:lottie_speed="2" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="30dp"
+        android:id="@+id/containerButtonNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/purple_500"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerButtonplay"
+        app:layout_constraintStart_toEndOf="@+id/containerButtonplay"
+        app:layout_constraintTop_toTopOf="@+id/containerButtonplay">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            app:lottie_rawRes="@raw/next"
+            app:lottie_speed="2" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

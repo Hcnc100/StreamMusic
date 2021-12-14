@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/songsFragment">
+
+    <fragment
+        tools:layout="@layout/item_song"
+        android:id="@+id/songsFragment"
+        android:name="com.nullpointer.streammusic.ui.fragments.main.SongsFragment"
+        android:label="SongsFragment" >
+        <action
+            android:id="@+id/action_songsFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/player_fragment"
+        android:id="@+id/playerFragment"
+        android:name="com.nullpointer.streammusic.ui.fragments.details.PlayerFragment"
+        android:label="PlayerFragment" />
+</navigation>

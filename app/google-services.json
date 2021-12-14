@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "343769582260",
+    "project_id": "streammusic-f32a8",
+    "storage_bucket": "streammusic-f32a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343769582260:android:a7bd3d2d1e40fcc9ee65e1",
+        "android_client_info": {
+          "package_name": "com.nullpointer.streammusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343769582260-iriirikc3flga3edo983cnj5m7g183p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nullpointer.streammusic",
+            "certificate_hash": "e4a61160d186bee6c0def18a109de983d7f3614b"
+          }
+        },
+        {
+          "client_id": "343769582260-k28bvjqh9qr4e7ckltuakio106jll9om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIxUnu_v2ZGTkhwQBtWqnL8_d64aLmhzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343769582260-k28bvjqh9qr4e7ckltuakio106jll9om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
